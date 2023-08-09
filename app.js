@@ -77,22 +77,23 @@ app.post("/compose", (req, res) => {
   res.redirect("/");
 });
 
-app.get("/posts/:postName", async (req, res) => {
+app.get("/posts/:postId", async (req, res) => {
   try {
-    const requestedTitle = _.lowerCase(req.params.postName);
-    const posts = await Post.find({});
+    const requestedPostId = req.params.postId;
+    // If the provided ID doesn't match, it returns null.
+    const post = await Post.findById(requestedPostId);
 
-    posts.forEach(post => {
-      const storedTitle = _.lowerCase(post.title);
-      if (storedTitle === requestedTitle) {
-        res.render("post.ejs", {
-          title: post.title,
-          content: post.content
-        });
-      }
-    })
+    if (post) {
+      res.render("post.ejs", {
+        title: post.title,
+        content: post.content
+      });
+    } else {
+      res.status(404).send("Post not found");
+    }
   } catch (err) {
     console.error(err);
+    res.status(500).send("An error occurred");
   }
 });
 
