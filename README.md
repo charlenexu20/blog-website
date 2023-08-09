@@ -3,15 +3,15 @@
 This is a simple blog website built using **Node.js, Express, MongoDB, and the EJS templating engine**. The website allows users to read and create blog posts.
 
 ### Home
-![blog_app_preview](https://github.com/charlenexu20/blog-website/assets/113628879/9b7b7edf-f1a0-4e28-a863-569959568db0)
+![blog_app_preview](https://github.com/charlenexu20/blog-website/assets/113628879/a2c4b14d-4b43-4d1d-8e0f-29ef709e550f)
 
 
 ### Compose
-![blog_app_preview](https://github.com/charlenexu20/blog-website/assets/113628879/27c9fd34-31b0-4407-b86d-52d3d2c7269d)
+![blog_app_preview](https://github.com/charlenexu20/blog-website/assets/113628879/ffacdd85-8dfb-463d-86a7-89e6041f03e4)
 
 
 ### Post detail
-![blog_app_preview](https://github.com/charlenexu20/blog-website/assets/113628879/e0da1157-a566-4a99-a314-31402c90af42)
+![blog_app_preview](https://github.com/charlenexu20/blog-website/assets/113628879/3d967196-bfba-4a12-bec3-0a7e5876f44f)
 
 ## Usage:
 
